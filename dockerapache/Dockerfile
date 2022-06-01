@@ -1,0 +1,8 @@
+FROM httpd
+#RUN mkdir -p /var/www/html
+#WORKDIR /var/www/html
+#RUN chown -R apache:apache /var/www/html/
+COPY files /usr/local/apache2/htdocs/
+#COPY $PWD/httpd.conf  /etc/httpd/conf.d/httpd.conf
+#EXPOSE 6060
+#CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
